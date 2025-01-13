@@ -17,8 +17,8 @@ exports.createOrder = async (req, res) => {
     amount
   );
   // console.log(createOrderResult);
-  let prepayId = createOrderResult.biz_content.prepay_id;
-  // let prepayId = '012e2a22e55ebb84b6b8b456b49bedf60fc000'
+ // let prepayId = createOrderResult.biz_content.prepay_id;
+  let prepayId = '012e2a22e55ebb84b6b8b456b49bedf60fc000'
   console.log('prepayid',prepayId)
   let rawRequest = createRawRequest(prepayId);
   // console.log("Assembled URL");
